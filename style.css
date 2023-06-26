@@ -1,23 +1,23 @@
 *{
-    font-family: century Gothic;
-    font-family: 'Poppins', sans-serif;
+  font-family: century Gothic;
+  font-family: 'Poppins', sans-serif;
 }
 .nav{
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav{
-    color: #000;
-    background-color: #704214;
+  color: #000;
+  background-color: #704214;
 
 }
 .nav-logo{
-    align-items: center;
-    margin-left: 10px;
-    margin-top: 10px;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .nav-title{
   display: flex;
@@ -34,108 +34,110 @@
 
 .nav-links{
 
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
-    gap: 10px;
-    flex: 1;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  gap: 10px;
+  flex: 1;
+  text-align: left;
 }
 .nav-links a{
-    color: #fff;
-    text-decoration: none;
-    padding-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 10px;
 }
 .nav-links a:hover{
-    background-color: #997950;
+  background-color: #997950;
 
 }
 .body {
-    height: 100vh; /* Tell the body to take the whole height of the viewport */
-    
-    margin: 0; /* Remove the white margin around the page that is default in most browsers. */
-    padding: 0; /* Do the same for the padding. */
-  }
+  height: 100vh; /* Tell the body to take the whole height of the viewport */
   
-  .main {
-    display: flex; /* Use flexbox */
-    flex-direction: row; /* Tell flexbox to align items in a row */
-    
-    min-height: 100%; /* Tell the main tag to take up at least 100% height of the body. */
-  }
+  margin: 0; /* Remove the white margin around the page that is default in most browsers. */
+  padding: 0; /* Do the same for the padding. */
+  display: flex;
+}
+  
+.main {
+  display: flex; /* Use flexbox */
+  flex-direction: row; /* Tell flexbox to align items in a row */
+  
+  min-height: 100%; /* Tell the main tag to take up at least 100% height of the body. */
+  flex-wrap: 1;
+}
   
   /* The container that holds the sidebar items like the menu */
-  .sidebar {
+.sidebar {
     flex-basis: 20%; /* Tell the flex-item to initially take up 20% of the screen/parent container width. */
     max-width: 20%;
     min-width: 20%;
     background-color: #704214;
 
-  }
+}
   
-  /* The container that holds the head, body, footer */
-  .content {
-    display: flex;
-    flex-direction: column;
-    background-color: #b6833a;
-    flex-grow: 1; /* Tell the flex-item to grow to take up as much space as possible. */
-  }
+/* The container that holds the head, body, footer */
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #b6833a;
+  flex-grow: 1; /* Tell the flex-item to grow to take up as much space as possible. */
+}
   
 .head h1{
-    font-size: 180%;
-    margin-bottom: 0px;
-    align-self: center;
+  font-size: 180%;
+  margin-bottom: 0px;
+  align-self: center;
 }
 .head p{
-    margin-bottom: 30px;
-    align-self: center;
+  margin-bottom: 30px;
+  align-self: center;
 }
 .head{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color: #000000;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #000000;
 }
 .hero-btn{
-    align-self: center;
-    text-decoration: none;
-    color: #000;
-    border: 1px solid #000;
-    padding: 10px 34px;
-    font-size: 14px;
-    background: transparent;
-    cursor: pointer;
+  align-self: center;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px 34px;
+  font-size: 14px;
+  background: transparent;
+  cursor: pointer;
 }
 .hero-btn:hover{
-    border: 1px solid  #704214;
-    background:  #704214;
-    transition: 1s;
+  border: 1px solid  #704214;
+  background:  #704214;
+  transition: 1s;
 }
 nav .fa{
     display: none;
 }
-  .body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./images/1.jpg);
-    background-size: cover;
-    background-position: center;
-    flex: 1;  /* Tell the flex-item to grow to take up as much space as possible. */
-  }
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/1.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 1;  /* Tell the flex-item to grow to take up as much space as possible. */
+}
   
-  .footer {
-    background-color: blue;
-  }
+.footer {
+  background-color: blue;
+}
   
-  @media screen and (max-width: 600px)
-  {
-    .main {
-      flex-direction: column !important; 
-    }
+@media screen and (max-width: 600px)
+{
+  .main {
+    flex-direction: column !important; 
   }
+}
 /*----- About us page -------*/
 .classes-header{
   display: flex;
@@ -168,13 +170,6 @@ nav .fa{
   outline: 0.2rem solid #704214;
   outline-offset: 0;
 }
-.products-container .products-container img{
-  height: 10rem;
-}
-.products-container .product:hover img{
-  transform: scale(.9);
-
-}
 .products-container .product h2{
   padding: 0rem.0;
   font-size: 1.2rem;
@@ -183,9 +178,11 @@ nav .fa{
 .products-container .product:hover h2{
   color: #eee;
 }
-.products-container .product .price{
-  font-size: 1rem;
-  color: #512b05;
+.products-container .product .preview-active p{
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #fff;
 }
 .product-preview{
   position: fixed;
@@ -198,7 +195,7 @@ nav .fa{
   width: 100%;
   height: 100%;
 }
-.product-preview.preview{
+.product-preview .preview{
   display: flex;
   position: fixed;
   text-align: center;
@@ -208,18 +205,9 @@ nav .fa{
 }
 .product-preview .preview.active{
   display: inline-block;
+
 }
-.product-preview .preview img{
-  height: 30rem;
-}
-.product-preview .preview.fa-times{
-  position: absolute;
-  top: 1rem; 
-  right: 1.5rem;
-  cursor: pointer;
-  color: #444;
-  font-size: 4rem;
-}
+
 /*----- classes page -------*/
 .classes-header{
   display: flex;
@@ -294,10 +282,8 @@ nav .fa{
 .product-preview-container {
   display: flex;
   flex-direction: row;
-
   justify-content: center;
   align-items: center;
-
   padding: 50px;
   gap: 20px;
 }
@@ -437,14 +423,15 @@ form button {
   overflow-x: hidden;
 }
 .body-1{
+  display: flexbox;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-transform: capitalize;
+  background-size: cover;
+  color: #000;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 3rem 2rem;
 }
@@ -459,23 +446,31 @@ form button {
 
 .class-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
 }
 
 .class-1 {
+  max-width: 80%;
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   background: #eecf8d;
   box-shadow: 0.2rem 0.5rem #4a3232(0,0,0,.05);
   outline:0.2rem solid #7a5f25;
   outline-offset: -0.4rem;
+  border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
 }
 .class-1:hover{
   outline: 0.2rem solid #2b2727;
+  outline-offset: 0;
 }
 .class-1 img {
   height: 15rem;
@@ -486,7 +481,7 @@ form button {
 .class-1 h3 {
   font-size: 1.25rem;
   color: #512b05;
-  margin-top: 1rem;
+  padding: 5rem 0;
   text-transform: uppercase;
 }
 .price{
@@ -494,46 +489,90 @@ form button {
   color: #512b05;
 }
 .class-preview {
+  display: none;
   top: 0; 
   left: 0;
   background-color: rgba(0,0,0,.8);
   position: fixed;
-  min-height: 100%;
   width: 100%;
-  display: none;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.preview-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+
 .preview{
-  display:inline-block;
+  display: inline-block;
   position: relative;
   text-align: center;
   background: #fff;
   padding: 2rem;
-  margin: 2rem ;
-  border-radius: 0.5rem;
-  width: 50rem;
-  height: 40rem;
+  margin: 2rem;
+
+  flex: 1;
 }
-.preview-active img {
-  max-width: 100%;
-  height: auto;
+.preview-active{
+  display: inline-block;
 }
-.preview-active h2{
-  max-width: 100%;
-  height: auto;
+.preview img {
+  height: 20rem;
 }
-.preview-active p{
-  max-width: 100%;
-  height: auto;
+.preview .fa-times{
+  position: absolute;
+  top:0.5rem; right:1rem;
+  cursor: pointer;
+  color:#000;
+  font-size: 1.5rem;
+}
+.preview .fa-times:hover{
+  transform: rotate(90deg);
+}
+.preview h2{
+  height: 0 ;
+  font-size: 1.5rem;
+}
+.preview p{
+  line-height: 1;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #000;
 }
 .checked {
   color: orange;
 }
-.fa-times{
-  position: absolute;
-  bottom: 42rem;
-  right: 1rem;
-  cursor: pointer;
+.preview .price{
+  padding: 1rem 0;
+  font-size: 0.9rem;
   color: #000;
-  font-size: 2rem;
+}
+.preview .buttons{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0rem;
+}
+.preview .buttons a{
+  flex:1 1 16rem;
+  padding:1rem;
+  font-size: 1rem;
+  color:#000;
+  border:.1rem solid #000;
+}
+.preview .buttons a.signup{
+  background: #000;
+  color: #fff;
+}
+.preview .buttons a.signup:hover{
+  background: #000;
+}
+
+@media screen and (max-width: 600px)
+{
+  .main {
+    flex-direction: column !important; 
+  }
 }
