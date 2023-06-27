@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=divce-width, intial-scale=1.0">
+    <title>Serenity Solution</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+
+<!-- custom js file link -->
+<script src="validation.js" defer></script>
+
+<style>
+  .body {
+    background: unset;
+  }
+</style>
+</head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <nav>
+          <div class="nav-logo">
+            <a href="registration.html"><img src="images/logo1.jpg"></a>
+          </div>
+          <div class="nav-title">
+            <h1>People. Productivity. Profitibility.</h1>
+          </div>
+          <div class="nav-links" onclick="">
+              <a href="index.html">Home</a>
+              <a href="About.html">About</a>
+              <a href="class.html">Classes</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="registration.html">Registration</a>
+          </div>   
+      </nav>
+      </div>
+      <div class="content">
+        <div class="body">
+          <div class="head 1">
+            <h1>Registration Form</h1>
+          </div>
+          <form>
+            <div class="form-group">
+                <label for="firtsname">Firstname</label>
+                <input type="text" name="Firstname" id="Firstname" onkeyup="validateFirstName()"/>
+                <span id="Firstname-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Lastname">Lastname</label>
+                    <input type="text" name="Lastname" id="Lastname" onkeyup="validateLastName()"/>
+                    <span id="Lastname-error"></span>
+                    </div>
+                <div class="form-group">
+                    <label for="Username">Username</label>
+                    <input type="text" name="Username" id="Username" onkeyup="validateUserName()"/>
+                    <span id="Username-error"></span>
+                    </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="text" name="Email" id="Email" onkeyup="validateEmail()"/>
+                    <span id="Email-error"></span>
+                    </div>
+               <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="text" name="Password" id="Password" onkeyup="validatePassword()"/>
+                    <span id="Password-error"></span>
+                    </div>
+                <div class="form-group">
+                    <label for="ConfirmPassord">Confirm Password</label>
+                    <input type="text" name="ConfirmPassword" id="ConfirmPassword" onkeyup="validateConfirmPassword()"/>
+                    <span id="ConfirmPassword-error"></span>
+                    </div>
+                <div class="form-group">
+                    <label for="Gender">Gender</label>
+                    <input type="text" name="Gender" id="Gender" onkeyup="validateGender()" />
+                    <span id="Gender-error"></span>
+                    </div>
+                <div class="form-group">
+                    <label for="Street">Street</label>
+                    <input type="text" name="Street" id="Street" onkeyup="validateStreet()"/>
+                    <span id="Street-error"></span>
+                    </div>
+                <div class="form-group">
+                    <label for="Suburb">Suburb</label>
+                    <input type="text" name="Suburb" id="Suburb" onkeyup="validateSuburb()"/>
+                    <span id="Suburb-error"></span>
+                    </div>
+                <div class="form-group">
+                    <label for="Postcode">Postcode</label>
+                    <input type="text" name="Postcode" id="Postcode" onkeyup="validatePostcode()"/>
+                    <span id="Postcode-error"></span>
+                    </div>
+                <div class="form-group">
+                    <label for="State">State</label>
+                    <input type="text" name="State" id="State" onkeyup="validateState()"/>
+                    <span id="State-error"></span>
+                    </div>
+                <div class="form-group">
+                    <label for="Phonenumber">Phone number</label>
+                    <input type="text" name="Phonenumbder" id="Phonenumber" onkeyup="validatePhonenumber()"/>
+                    <span id="Phonenumber-error"></span>
+                    </div>
+                <div class="form-group" style="justify-content: center;">
+                    <button type="button" onclick="Register()">Sign Up</button>
+                    <span id="submit-error"></span>
+                    <button type="Reset" onclick="Refresh()">Reset</button>
+                    <span id="Reset-error"></span>
+                    </div>
+            </div>
+        </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
